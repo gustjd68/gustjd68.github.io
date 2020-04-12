@@ -1,8 +1,9 @@
 ---
 layout: single
-title:  "Welcome to Jekyll!"
+title:  "Strassen Algotithm!"
 date:   2020-04-11 23:54:22 +0900
 categories: jekyll update
+use_math: true
 ---
 <h1>Strassen Algotithm</h1>
 
