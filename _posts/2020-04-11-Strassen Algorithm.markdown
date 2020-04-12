@@ -23,18 +23,18 @@ use_math: true
 $$
 \begin{bmatrix}
 C11 & C12 \\
-C21 & C22 \\
+C21 & C22 
 
 \end{bmatrix}
 =
 \begin{bmatrix}
 A11 & A12 \\
-A21 & A22 \\
+A21 & A22 
 
 \end{bmatrix}*
 \begin{bmatrix}
 B11 & B12 \\
-B21 & B22 \\
+B21 & B22 
 
 \end{bmatrix}
 $$
