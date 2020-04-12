@@ -31,18 +31,14 @@ C21 & C22
 A11 & A12 \\
 A21 & A22 
 
-\end{pmatrix}*
+\end{pmatrix}
+*
 \begin{pmatrix}
 B11 & B12 \\
 B21 & B22 
 
 \end{pmatrix}
 $$
-<br>
-$$
-A=\begin{pmatrix}a_1&a_2 \\a_3 & a_4\end{pmatrix}   ,B =\begin{pmatrix}b_1&b_2 \\b_3 & b_4\end{pmatrix}, C=\begin{pmatrix}c_1&c_2 \\c_3 & c_4\end{pmatrix}
-$$
-<br>
 $$
 C=\begin{bmatrix}M1+M4-M5+M7 & M3+M5 \\ M2+M4 & M1+M3-M2+M6\\
 \end{bmatrix}
@@ -58,7 +54,11 @@ M5 = (A11+A12)B22
 M6 = (A21 – A11)(B11+B12)
 M7 = (A12 – A22)(B21+B22)
 ```
-<br>
+
+
+
+
+
 
 <h3>Strassen Algorithm의 사용</h3>
 
