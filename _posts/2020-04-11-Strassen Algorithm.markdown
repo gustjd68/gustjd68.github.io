@@ -40,8 +40,8 @@ B21 & B22 \\
 $$
 <br><br>
 $$
-C=\begin{bmatrix}M1+M4-M5+M7 & M3+M5 \\ M2+M4 & M1+M3-M2+M6\\\
-end{bmatrix}
+C=\begin{bmatrix}M1+M4-M5+M7 & M3+M5 \\ M2+M4 & M1+M3-M2+M6\\
+\end{bmatrix}
 $$
 
 ```html
