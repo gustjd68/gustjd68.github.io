@@ -21,22 +21,22 @@ use_math: true
 
 
 $$
-\begin{bmatrix}
+\begin{pmatrix}
 C11 & C12 \\
 C21 & C22 
 
-\end{bmatrix}
+\end{pmatrix}
 =
-\begin{bmatrix}
+\begin{pmatrix}
 A11 & A12 \\
 A21 & A22 
 
-\end{bmatrix}*
-\begin{bmatrix}
+\end{pmatrix}*
+\begin{pmatrix}
 B11 & B12 \\
 B21 & B22 
 
-\end{bmatrix}
+\end{pmatrix}
 $$
 <br><br>
 $$
