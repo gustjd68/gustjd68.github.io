@@ -21,7 +21,7 @@ use_math: true
 
 
 $$
-\begin{pmatrix}
+C=\begin{pmatrix}
 C11 & C12 \\
 C21 & C22 
 
