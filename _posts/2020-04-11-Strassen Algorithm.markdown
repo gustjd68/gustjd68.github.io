@@ -38,7 +38,11 @@ B21 & B22
 
 \end{pmatrix}
 $$
-<br><br>
+<br>
+$$
+A=\begin{pmatrix}a_1&a_2 \\a_3 & a_4\end{pmatrix}   ,B =\begin{pmatrix}b_1&b_2 \\b_3 & b_4\end{pmatrix}, C=\begin{pmatrix}c_1&c_2 \\c_3 & c_4\end{pmatrix}
+$$
+<br>
 $$
 C=\begin{bmatrix}M1+M4-M5+M7 & M3+M5 \\ M2+M4 & M1+M3-M2+M6\\
 \end{bmatrix}
