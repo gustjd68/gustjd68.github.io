@@ -1,0 +1,100 @@
+---
+layout: single
+title:  "Greedy Algotithm"
+date:   2020-04-10 20:39:08 +0900
+categories: jekyll update
+use_math: true
+---
+
+<h1>그리디(Greedy) 알고리즘</h1>
+
+그리디(Greedy) 알고리즘
+
+- 그리디 알고리즘은 최적화 문제를 해결한다. 
+
+- 최적화(optimization) 문제: 가능한 해들 중에서 가장 좋은(최대 또는 최소) 해를 찾는 문제 • 욕심쟁이 방법, 탐욕적 방법, 탐욕 알고리즘 등으로 불리 기도 한다. 
+
+- 그리디 알고리즘은 (입력) 데이터 간의 관계를 고려하지 않고 수행 과정에서 ‘욕심내어’ 최소값 또는 최대값을 가 진 데이터를 선택한다. 
+
+-  이러한 선택을 ‘근시안적’인 선택이라고 말하기도 한다. 
+
+  ​		
+
+  **그리디 알고리즘의 예**
+
+  
+
+  현성이는 방 청소를 하면서 필요 없는 전공 서적을 사람들에게 나눠주려고 한다. 나눠줄 책을 모아보니 총 N권이었다. 책이 너무 많기 때문에 현성이는 책을 구분하기 위해 각각 1부터 N까지의 정수 번호를 중복되지 않게 매겨 두었다.
+
+  조사를 해 보니 책을 원하는 서강대학교 학부생이 총 M명이었다.
+
+  현성이는 이 M명에게 신청서에 두 정수 a, b (1 ≤ a ≤ b ≤ N)를 적어 내라고 했다. 그러면 현성이는 책 번호가 a 이상 b 이하인 책 중 남아있는 책 한 권을 골라 그 학생에게 준다. 
+
+  만약 a번부터 b번까지의 모든 책을 이미 다른 학생에게 주고 없다면 그 학생에게는 책을 주지 않는다.
+
+  현성이가 책을 줄 수 있는 최대 학생 수를 구하시오.
+
+  
+
+  풀이
+
+  ```
+  import java.io.BufferedReader;
+  import java.io.IOException;
+  import java.io.InputStreamReader;
+  import java.util.Arrays;
+  import java.util.StringTokenizer;
+  
+  public class Main {
+  
+  	public static void main(String[] args) throws IOException{
+  		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+  		int tc = Integer.parseInt(bf.readLine());
+  		StringBuilder sb = new StringBuilder();
+  		while(tc-- > 0) {
+  			StringTokenizer st = new StringTokenizer(bf.readLine());
+  			int n = Integer.parseInt(st.nextToken());
+  			int m = Integer.parseInt(st.nextToken());
+  			
+  			boolean [] check = new boolean[n+1]; // 책이 있는지 체크할 배열
+  			Book [] books = new Book[m];
+  			for(int i=0; i<m; i++) {
+  				st = new StringTokenizer(bf.readLine());
+  				books[i] = new Book();
+  				books[i].a = Integer.parseInt(st.nextToken());
+  				books[i].b = Integer.parseInt(st.nextToken());
+  			}
+  			Arrays.sort(books);
+  			int ans = 0;
+  			for(int i=0; i<books.length; i++) {
+  				for(int j=books[i].a; j<=books[i].b; j++) {
+  					if(!check[j]) {
+  						check[j] = true;
+  						ans++;
+  						break;
+  					}
+  				}
+  			}
+  			sb.append(ans+"\n");
+  		}
+  		System.out.print(sb.toString());
+  	}
+  
+  } class Book implements Comparable<Book> {
+  	int a;
+  	int b;
+  	
+  	@Override
+  	public int compareTo(Book o) {
+  		int r = this.b - o.b;
+  		if(r==0) r = this.a - o.a;
+  		return r;
+  	}
+  }
+  ```
+
+  
+
+  
+
+  
